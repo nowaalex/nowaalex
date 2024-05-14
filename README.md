@@ -2,7 +2,7 @@
 
 ### Languages
 
-javascript, typescript, C, C++, PHP, bash
+javascript, typescript, html, css, c, c++, php, bash
 
 ### Web frameworks
 
@@ -10,7 +10,7 @@ astro, nextjs
 
 ### Backend
 
-docker, docker-compose, nginx, fastify, express, mysql, puppeteer
+docker, docker-compose, nginx, fastify, express, mysql, puppeteer, verdaccio
 
 ### Frontend
 
