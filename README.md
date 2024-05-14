@@ -1,16 +1,37 @@
-### Hi there 👋
+## Tech Stack
 
-<!--
-**nowaalex/nowaalex** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Languages
 
-Here are some ideas to get you started:
+javascript, typescript, C, C++, PHP, bash
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### Web frameworks
+
+astro, nextjs
+
+### Backend
+
+docker, docker-compose, nginx, fastify, express, mysql, puppeteer
+
+### Frontend
+
+2d canvas, react, react-router, react-query, react-hook-form, formik, mobx, redux, react-dnd, MUI, tailwind, emotion, css-modules, floating-ui, microsoft/signalr, pusher, twilio
+
+### Package managers
+
+pnpm, yarn, npm
+
+### Bundlers
+
+vite, esbuild, webpack, rollup
+
+### Documentation
+
+tsdoc, microsoft/api-extractor, microsoft/api-documenter, markdown, rehype, remark, changesets
+
+### Testing
+
+jest, playwright
+
+### Desktop
+
+Debian, i3wm
