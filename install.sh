@@ -3,7 +3,7 @@ sudo apt install network-manager exa micro acpid btop curl wget build-essential 
 sudo systemctl enable acpid
 
 # sway
-sudo apt install wayland-protocols xwayland sway swaylock swayidle swaybg swayimg fuzzel foot fonts-font-awesome wlogout
+sudo apt install wayland-protocols xwayland sway swaylock swayidle swaybg swayimg fuzzel fonts-font-awesome wlogout
 
 # chrome
 curl -fSsL https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmor | sudo tee /usr/share/keyrings/google-chrome.gpg >> /dev/null
