@@ -1,4 +1,4 @@
 cd configs
 rm -rfv ./config/*
 cp ~/.bash_profile .
-cp -r ~/.config/{sway,fuzzel,waybar} .config
+cp -r ~/.config/{sway,fuzzel,waybar,foot} .config
