@@ -1,5 +1,5 @@
 # base
-sudo apt install network-manager exa micro acpid btop curl wget build-essential openssh-client nnn zip unzip
+sudo apt install network-manager exa micro acpid btop curl wget build-essential openssh-client nnn zip unzip yt-dlp
 sudo systemctl enable acpid
 
 # sway
