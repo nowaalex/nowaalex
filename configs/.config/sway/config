@@ -4,6 +4,8 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+font pango:SourceCodePro Medium 11
+
 ### Variables
 #
 # Logo key. Use Mod1 for Alt.
@@ -24,8 +26,14 @@ include /etc/sway/config-vars.d/*
 
 ### Output configuration
 #
+
+
 # Random wallpaper from folder
 output * bg `find ~/wallpapers -type f | shuf -n 1` fill
+
+# hidpi
+output eDP-1 scale 1.2
+
 
 #
 # Example configuration:
