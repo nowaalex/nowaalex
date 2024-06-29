@@ -17,12 +17,19 @@ button {
   /* Avoid rounded borders under each button name */
   border: none;
   border-radius: 0;
+  transition: none; /* Disable predefined animations */
 }
 
 #workspaces button {
   padding: 0 5px;
   color: #ffffff;
   border-bottom: 3px solid transparent;
+}
+
+#workspaces button:hover {
+  box-shadow: none; /* Remove predefined box-shadow */
+  text-shadow: none; /* Remove predefined text-shadow */
+  background: none; /* Remove predefined background color (white) */
 }
 
 #workspaces button.focused {
@@ -150,8 +157,9 @@ label:focus {
 #language {
   background: #00b093;
   color: #740864;
-  padding: 0 5px;
-  min-width: 16px;
+  padding: 0;
+  /* 2 symbols min + extra space*/
+  min-width: 3em;
 }
 
 #keyboard-state {
