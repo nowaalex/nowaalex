@@ -89,6 +89,9 @@ bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+# Hate luggy touchpads
+bindsym XF86Launch2 exec ~/.config/sway/resurrect_touchpad.sh
+
 ### Key bindings
 #
 # Basics:
