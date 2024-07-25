@@ -9,6 +9,7 @@ image/png=swayimg.desktop
 image/jpeg=swayimg.desktop
 text/vnd.trolltech.linguist=code.desktop
 x-scheme-handler/mailto=google-chrome.desktop
+application/x-zerosize=code.desktop
 
 [Added Associations]
 application/vnd.ms-publisher=code.desktop;
@@ -16,3 +17,7 @@ image/png=swayimg.desktop;
 image/jpeg=swayimg.desktop;
 text/vnd.trolltech.linguist=code.desktop;
 text/plain=code.desktop;
+application/x-zerosize=code.desktop;
+application/pkcs8+pem=gcr-viewer.desktop;code.desktop;
+application/pkix-cert=code.desktop;gcr-viewer.desktop;
+application/x-mozilla-bookmarks=code.desktop;
