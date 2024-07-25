@@ -1,6 +1,5 @@
 if [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" -eq 1 ]; then
- 	exec sway
-	eval `ssh-agent`
+ 	ssh-agent sway
 
 	# for screen sharing in chrome
 	export XDG_CURRENT_DESKTOP=sway # xdg-desktop-portal
