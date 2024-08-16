@@ -3,3 +3,5 @@
 	name = alex
 [core]
 	editor = micro
+[credential]
+	helper = store
