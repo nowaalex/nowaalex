@@ -1,16 +1,20 @@
-# base
-sudo apt install network-manager exa micro acpid btop curl wget build-essential openssh-client nnn zip unzip yt-dlp transmission-cli
-sudo systemctl enable acpid
+#!/bin/bash
 
-# sway
-sudo apt install wayland-protocols xwayland sway swaylock swayidle swaybg swayimg fuzzel fonts-font-awesome wlogout
+# 1. Install https://github.com/Jguer/yay
+# 2. Install ucode/firmware
 
-# chrome
-curl -fSsL https://dl.google.com/linux/linux_signing_key.pub | sudo gpg --dearmor | sudo tee /usr/share/keyrings/google-chrome.gpg >> /dev/null
-echo deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome.gpg] http://dl.google.com/linux/chrome/deb/ stable main | sudo tee /etc/apt/sources.list.d/google-chrome.list
-sudo apt update
-sudo apt install -y google-chrome-stable
+ORIG_DIR="$(pwd)"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
-# /etc/environment 
-# LIBVA_DRIVER_NAME=iHD
-# VDPAU_DRIVER=va_gl
+yay -S --needed $(grep -Ev '^\s*#|^\s*$' "$SCRIPT_DIR/packages_snapshot")
+
+read -rsp "Enter password to decrypt backup archives: " BACKUP_PWD
+echo
+
+cd "$HOME"
+echo "$BACKUP_PWD" | gpg --batch --yes --passphrase-fd 0 -d "$SCRIPT_DIR/home_backup.tar.bz2.gpg" | bunzip2 | tar -xvf -
+
+cd /
+echo "$BACKUP_PWD" | sudo gpg --batch --yes --passphrase-fd 0 -d "$SCRIPT_DIR/root_backup.tar.bz2.gpg" | bunzip2 | sudo tar -xvf -
+
+cd "$ORIG_DIR"
