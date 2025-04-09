@@ -45,6 +45,7 @@ gvfs-mtp
 gvfs-smb
 iwd
 less
+libappindicator-gtk3
 libgepub
 libmp4v2
 libopenraw
@@ -85,6 +86,7 @@ rsync
 rust
 rust-analyzer
 rustscan
+slack-desktop
 sshfs
 sudo
 sway
