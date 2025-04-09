@@ -1,7 +1,6 @@
 #!/bin/bash
 
-ORIG_DIR="$(pwd)"
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+source "./vars.sh"
 cd "$HOME"
 
 yay -Qeq | grep -v -f "$SCRIPT_DIR/packages_blacklist" > "$SCRIPT_DIR/packages_snapshot"
@@ -9,7 +8,7 @@ yay -Qeq | grep -v -f "$SCRIPT_DIR/packages_blacklist" > "$SCRIPT_DIR/packages_s
 read -rsp "Enter password to encrypt backup archives: " BACKUP_PWD
 echo
 
-tar -cjf "$SCRIPT_DIR/home_backup.tar.bz2" --files-from=- <<EOF
+tar -cjf "$HOME_ARCHIVE" --files-from=- <<EOF
 .bash_profile
 .bashrc
 .gitconfig
@@ -30,18 +29,18 @@ wallpapers
 .git-credentials
 EOF
 
-echo "$BACKUP_PWD" | gpg --batch --yes --passphrase-fd 0 -c "$SCRIPT_DIR/home_backup.tar.bz2"
-rm "$SCRIPT_DIR/home_backup.tar.bz2"
+echo "$BACKUP_PWD" | gpg --batch --yes --passphrase-fd 0 -c "$HOME_ARCHIVE"
+rm "$HOME_ARCHIVE"
 
 cd /
 
-sudo tar -cjf "$SCRIPT_DIR/root_backup.tar.bz2" --files-from=- <<EOF
+sudo tar -cjf "$ROOT_ARCHIVE" --files-from=- <<EOF
 etc/vconsole.conf
 etc/environment
 etc/sudoers
 EOF
 
-echo "$BACKUP_PWD" | gpg --batch --yes --passphrase-fd 0 -c "$SCRIPT_DIR/root_backup.tar.bz2"
-sudo rm "$SCRIPT_DIR/root_backup.tar.bz2"
+echo "$BACKUP_PWD" | gpg --batch --yes --passphrase-fd 0 -c "$ROOT_ARCHIVE"
+sudo rm "$ROOT_ARCHIVE"
 
 cd "$ORIG_DIR"
