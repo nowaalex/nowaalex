@@ -12,21 +12,24 @@ tar -cjf "$HOME_ARCHIVE" --files-from=- <<EOF
 .bash_profile
 .bashrc
 .gitconfig
+.aws
+.ssh
+.zed
+.git-credentials
 .config/sway
 .config/fuzzel
 .config/bluetuith
 .config/waybar
 .config/wlogout
 .config/dconf
-.config/alacritty
+.config/foot
 .config/mimeapps.list
 .config/mpv
 .config/zed
-.config/electron-flags.conf
-.config/code-flags.conf
 wallpapers
-.ssh
-.git-credentials
+tutanota
+DEUS
+docs
 EOF
 
 echo "$BACKUP_PWD" | gpg --batch --yes --passphrase-fd 0 -c "$HOME_ARCHIVE"
@@ -38,6 +41,7 @@ sudo tar -cjf "$ROOT_ARCHIVE" --files-from=- <<EOF
 etc/vconsole.conf
 etc/environment
 etc/sudoers
+etc/NetworkManager/system-connections
 EOF
 
 echo "$BACKUP_PWD" | gpg --batch --yes --passphrase-fd 0 -c "$ROOT_ARCHIVE"
