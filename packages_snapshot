@@ -1,6 +1,7 @@
 7zip
 aarch64-linux-gnu-gcc
 aarch64-linux-gnu-glibc
+adobe-source-code-pro-fonts
 alsa-utils
 atool
 awesome-terminal-fonts
@@ -41,6 +42,7 @@ fwupd
 fzf
 git
 git-filter-repo
+gnome-keyring
 grim
 gvfs
 gvfs-afc
@@ -73,7 +75,6 @@ network-manager-applet
 networkmanager
 networkmanager-openvpn
 nmap
-nodejs
 noto-fonts
 noto-fonts-emoji
 noto-fonts-extra
@@ -97,6 +98,7 @@ rsync
 rust-analyzer
 rustscan
 rustup
+slack-desktop-wayland
 sshfs
 sudo
 sway
@@ -121,13 +123,16 @@ ttf-droid
 ttf-fira-code
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
+ttf-noto-nerd
 ttf-roboto
 ttf-sourcecodepro-nerd
 ttf-terminus-nerd
 tumbler
+tzupdate
 unrar
 unzip
 usbutils
+vulkan-radeon
 waybar
 wayland-protocols
 wayland-utils
@@ -141,6 +146,8 @@ xan
 xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
+yay
+yay-debug
 yazi
 yt-dlp
 zed

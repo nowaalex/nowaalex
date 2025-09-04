@@ -26,6 +26,7 @@ tar -cjf "$HOME_ARCHIVE" --files-from=- <<EOF
 .config/mimeapps.list
 .config/mpv
 .config/zed
+.config/chromium-flags.conf
 wallpapers
 tutanota
 DEUS
