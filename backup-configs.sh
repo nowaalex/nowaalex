@@ -9,13 +9,14 @@ read -rsp "Enter password to encrypt backup archives: " BACKUP_PWD
 echo
 
 tar -cjf "$HOME_ARCHIVE" --files-from=- <<EOF
-.bash_profile
-.bashrc
+.zprofile
+.zshrc
 .gitconfig
 .aws
 .ssh
 .zed
 .git-credentials
+bin
 .config/sway
 .config/fuzzel
 .config/bluetuith

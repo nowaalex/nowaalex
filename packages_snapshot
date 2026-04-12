@@ -11,6 +11,8 @@ base-devel
 bash-completion
 bat
 bind
+bleachbit
+bluetui
 bluetuith
 bluez-obex
 bluez-utils
@@ -18,13 +20,16 @@ brightnessctl
 btop
 catfish
 chromium
-cmus
+code
 dbeaver
 difftastic
+dkms
 dmidecode
 docker
+docker-buildx
 docker-compose
 dosfstools
+downgrade
 duf
 dust
 efibootmgr
@@ -37,6 +42,7 @@ firefox-developer-edition
 flameshot
 foot
 foot-terminfo
+fprintd
 fuzzel
 fwupd
 fzf
@@ -46,14 +52,16 @@ gnome-keyring
 grim
 gvfs
 gvfs-afc
-gvfs-google
 gvfs-gphoto2
 gvfs-mtp
 gvfs-smb
+hl
 imagemagick
+iwd
 jq
+lazygit
 less
-libappindicator-gtk3
+libappindicator
 libgepub
 libmp4v2
 libopenraw
@@ -62,6 +70,7 @@ libreoffice-fresh-pl
 libreoffice-fresh-ru
 libreoffice-fresh-uk
 libva-utils
+libwebp-utils
 linux
 linux-firmware
 linux-headers
@@ -71,6 +80,7 @@ micro
 mpv
 mtpfs
 net-tools
+netscanner
 network-manager-applet
 networkmanager
 networkmanager-openvpn
@@ -82,6 +92,7 @@ openssh
 otf-font-awesome
 pavucontrol
 perf
+pipewire
 pipewire-alsa
 pipewire-pulse
 postgresql
@@ -89,7 +100,6 @@ procs
 python-brotlicffi
 python-websockets
 qt5-wayland
-rankmirrors
 reflector
 resvg
 ripgrep
@@ -100,6 +110,7 @@ rustscan
 rustup
 slack-desktop-wayland
 sshfs
+starship
 sudo
 sway
 swaybg
@@ -113,6 +124,7 @@ terminus-font
 thunar
 thunar-archive-plugin
 thunar-shares-plugin
+thunar-vcs-plugin
 thunar-volman
 torbrowser-launcher
 traceroute
@@ -138,6 +150,7 @@ wayland-protocols
 wayland-utils
 wev
 wget
+wireplumber
 wl-clipboard
 wlogout
 woff2-fira-code
@@ -147,9 +160,11 @@ xdg-desktop-portal
 xdg-desktop-portal-gtk
 xdg-desktop-portal-wlr
 yay
-yay-debug
 yazi
 yt-dlp
 zed
 zip
 zoxide
+zsh
+zsh-autosuggestions
+zsh-syntax-highlighting
