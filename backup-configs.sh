@@ -3,7 +3,7 @@
 source "./vars.sh"
 cd "$HOME"
 
-yay -Qeq | grep -v -f "$SCRIPT_DIR/packages_blacklist" > "$SCRIPT_DIR/packages_snapshot"
+paru -Qeq | grep -v -f "$SCRIPT_DIR/packages_blacklist" > "$SCRIPT_DIR/packages_snapshot"
 
 read -rsp "Enter password to encrypt backup archives: " BACKUP_PWD
 echo
@@ -19,7 +19,6 @@ tar -cjf "$HOME_ARCHIVE" --files-from=- <<EOF
 bin
 .config/sway
 .config/fuzzel
-.config/bluetuith
 .config/waybar
 .config/wlogout
 .config/dconf
@@ -43,7 +42,7 @@ sudo tar -cjf "$ROOT_ARCHIVE" --files-from=- <<EOF
 etc/vconsole.conf
 etc/environment
 etc/sudoers
-etc/NetworkManager/system-connections
+var/lib/iwd
 EOF
 
 echo "$BACKUP_PWD" | gpg --batch --yes --passphrase-fd 0 -c "$ROOT_ARCHIVE"

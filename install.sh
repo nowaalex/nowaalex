@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# 1. Install https://github.com/Jguer/yay
+# 1. Install git clone https://aur.archlinux.org/paru.git
 # 2. Install ucode/firmware
 
 source "./vars.sh"
 
-yay -S --needed $(grep -Ev '^\s*#|^\s*$' "$SCRIPT_DIR/packages_snapshot")
+paru -S --needed $(grep -Ev '^\s*#|^\s*$' "$SCRIPT_DIR/packages_snapshot")
 
 read -rsp "Enter password to decrypt backup archives: " BACKUP_PWD
 echo
