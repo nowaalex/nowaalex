@@ -34,6 +34,7 @@ duf
 dust
 easyeffects
 efibootmgr
+ente-auth-bin
 eslint
 fbreader
 fd
@@ -172,6 +173,7 @@ xdg-desktop-portal-wlr
 yazi
 yt-dlp
 zed
+zenity
 zip
 zoxide
 zsh
